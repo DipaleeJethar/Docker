@@ -1,0 +1,36 @@
+Docker
+Docker is a containerization platform for developing, packaging, shipping, and running applications.
+It provides the ability to run an application in an isolated environment called a container. 
+Why we need Docker ?
+-	Docker is needed to make software development easier, faster, and more reliable.
+-	It packages an application with all its dependencies into a “container”, so it works the same everywhere on your computer, on a server, or in the cloud.
+-	It saves the time, avoid conflicts, and simplifies scaling, testing, and collaboration.
+When you need Docker ?
+-	You need to manage and deploy applications consistently across different environments.
+-	You’re building microservices architecture.
+-	Your team wants to adapt DevOps practices.
+-	Scalability and efficient resource utilization are important.
+Containers
+-	A way to package an application with all the necessary dependencies and configuration.
+-	It can be easily shared.
+-	Make deployment and development efficient.
+
+Architecture of Docker
+Docker follows Client-Server architecture, which includes the three main components that are Docker Client, Docker Host, and Docker Registry.
+
+What is Docker daemon?
+Docker daemon runs on the host operating system. It is responsible for running containers to manage docker services. Docker daemon communicates with other daemons. It offers various Docker objects such as images, containers, networking, and storage.
+
+1. Docker Client
+Docker client uses commands and REST APIs to communicate with the Docker Daemon (Server). When a client runs any docker command on the docker client terminal, the client terminal sends these docker commands to the Docker daemon. Docker daemon receives these commands from the docker client in the form of command and REST API's request.
+ 
+
+2. Docker Host
+Docker Host is used to provide an environment to execute and run applications. It contains the docker daemon, images, containers, networks, and storage.
+3. Docker Registry
+Docker Registry manages and stores the Docker images.
+There are two types of registries in the Docker -
+Pubic Registry - Public Registry is also called as Docker hub.
+Private Registry - It is used to share images within the enterprise.
+
+
